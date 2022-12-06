@@ -1,0 +1,343 @@
+.login-container,
+#kc-reset-password-form,
+#kc-passwd-update-form,
+#kc-error-message {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  background: linear-gradient(90deg, #202227 14.45%, #15161a 100%);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card-pf {
+  width: 350px;
+  background-color: transparent !important;
+}
+
+.login-pf-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#kc-page-title,
+#forgot-title,
+#update-title,
+.error-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 0 0 72px 0;
+  margin: 0 !important;
+  color: #ffffff;
+}
+
+.login-pf-header {
+  width: 100%;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.input-login,
+#kc-reset-password-form .pf-c-form-control,
+.col-xs-12 .pf-c-form-control {
+  font-family: Roboto, sans-serif;
+  height: 40px;
+  border: 1px solid #c7c7cc;
+  padding: 9px 10px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.input-login:focus,
+#kc-reset-password-form .pf-c-form-control:focus,
+#kc-passwd-update-form .col-xs-12 input:focus {
+  outline: none;
+  border: 1px solid #c7c7cc;
+}
+
+.input-login:hover {
+  border: 1px solid #c7c7cc;
+}
+
+#kc-form-options .checkbox {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.label-input,
+.login-form-input-label,
+.input-error-username,
+.col-xs-12 .pf-c-form__label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 0 0 4px 0;
+}
+
+#kc-form-options .toggle {
+  isolation: isolate;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#rememberMe {
+  display: none;
+}
+
+#kc-form-options .dot {
+  height: 100%;
+  width: 200%;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+}
+
+#rememberMe:checked ~ .dot {
+  transform: translate3d(25%, 0, 0);
+}
+
+#kc-header-wrapper {
+  display: none;
+}
+
+#kc-form-reset-psw a {
+  font-size: 16px;
+  padding-right: 8px;
+}
+
+#kc-login,
+#kc-reset-password-form #kc-form-buttons .pf-c-button,
+#kc-passwd-update-form .pf-c-button {
+  height: 40px;
+  border-radius: 8px;
+  background-color: #0066ff;
+  background: linear-gradient(90deg, #0acffe 0%, #495aff 100%);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.chill {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.login-pf-page .card-pf {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.login-pf-page {
+  padding: 0;
+}
+
+.logo {
+  width: 389px;
+  height: 260px;
+  background-image: url("./img/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    width: 329px;
+    height: 221px;
+  }
+
+  #kc-form-login {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .logo {
+    width: 250px;
+    height: 170px;
+  }
+
+  #kc-form-login {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .login-logo {
+    display: none;
+  }
+
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #kc-form-login,
+  .login-pf-header {
+    width: 250px;
+  }
+}
+
+.forgot-password {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  color: #3a3a3c;
+}
+
+.forgot-password a:hover {
+  color: #3a3a3c;
+}
+
+#kc-form-buttons {
+  margin: 0;
+  width: inherit;
+  padding: 72px 0 0 0;
+}
+
+#kc-form-login {
+  width: 350px;
+}
+
+#kc-form-wrapper,
+#kc-content-wrapper,
+#kc-form-login,
+.login-pf-settings {
+  margin: 0;
+}
+
+#kc-form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#kc-reset-password-form,
+#kc-passwd-update-form,
+#kc-error-message {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  min-width: min-content;
+  height: min-content;
+  min-height: 100vh;
+}
+
+#kc-reset-password-form .form-group,
+.error-content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#kc-form-options {
+  display: none;
+}
+
+#form-group-update,
+.error-content {
+  flex-direction: column;
+}
+
+#form-group-update .pf-c-button {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-horizontal .form-group {
+  margin: 0;
+}
+
+#form-group-update {
+  display: flex;
+  justify-content: center;
+}
+
+#form-group-update .col-xs-12 {
+  padding: 0;
+}
+
+#form-group-update .form-group {
+  margin: 0 0 16px 0;
+}
+
+#kc-passwd-update-form .pf-c-button {
+  margin: 56px 0 0 0;
+}
+
+.navigationBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0066ff;
+  border: 1px solid #0066ff;
+  border-radius: 5px;
+  height: 40px;
+  background-color: transparent;
+  margin: 22px 0 0 0;
+}
+
+.navigationIcon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url("./img/chevron-right.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
